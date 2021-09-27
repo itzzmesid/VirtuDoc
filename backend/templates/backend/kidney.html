@@ -38,12 +38,12 @@
         <hr class="w-75 mx-auto pt-5">
         <div class="row mb-5">
           <div class="col-lg-6 col-md-6 col-12 my-auto">
-            <img src="" class="float-left">
-            
-
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fen.bcdn.biz%2Fimages%2Femails_source%2F13ab8907-dca0-4a32-8942-c452c3846193.jpg&f=1&nofb=1" class="float-left">
           </div>
           <div class="col-lg-6 col-md-6 col-12">
-            <form action="{{ url_for('predict')}}" method="post">
+            <form action="kpredict" method="POST">
+            {% csrf_token %}
+
               <div class="form-group">
                 <!-- TODO : Year to accept only year date picker -->
                 <label for="bp">Blood Pressure</label>

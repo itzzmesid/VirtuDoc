@@ -2,29 +2,32 @@ from django.shortcuts import render
 import joblib
 import numpy as np
  
- 
-def ValuePredictor(to_predict_list,size,model_name):
-    mdname = str(model_name)
-    to_predict = np.array(to_predict_list).reshape(1,size)
-    if(size==7):
-        trained_model = joblib.load(rf'/home/sid/Desktop/VirtuDoc/{mdname}_model.pkl')
-        result = trained_model.predict(to_predict)
-    return result[0]
- 
- 
+
 def home(request):
     return render(request,'backend/index.html')
  
 def heart(request):
-    return render(request,'heart.html')
+    return render(request,'backend/heart.html')
  
 def kidney(request):
-    return render(request,'kidney.html')
+    return render(request,'backend/kidney.html')
  
 def diabetes(request):
-    return render(request,'diabetes.html')
- 
- 
+    return render(request,'backend/diabetes.html')
+
+def liver(request):
+    return render(request,'backend/liver.html')
+
+
+def ValuePredictor(to_predict_list,size,model_name):
+    mdname = str(model_name)
+    to_predict = np.array(to_predict_list).reshape(1,size)
+    if(size==7):
+        trained_model = joblib.load(rf'/home/sid/VirtuDoc/{mdname}_model.pkl')
+        result = trained_model.predict(to_predict)
+    return result[0]
+  
+
 def kdpredictor(request):
     mname = "kidney"
     klis = []
@@ -34,9 +37,9 @@ def kdpredictor(request):
             result = ValuePredictor(klis,7,mname)
  
     if(int(result)==1):
-        return render(request,'risk.html')
+        return render(request,'backend/risk.html')
     else:
-        return render(request,'norisk.html')
+        return render(request,'backend/norisk.html')
  
  
 def hdpredictor(request):
@@ -47,16 +50,30 @@ def hdpredictor(request):
         result = ValuePredictor(hlis,7,mname)
     
     if(int(result)==1):
-        return render(request,'risk.html')
+        return render(request,'backend/risk.html')
     else:
-        return render(request,'norisk.html')
+        return render(request,'backend/norisk.html')
+
+
+def lpredictor(request):
+    mname = "liver"
+    llis = []
+    llis = [request.POST.get(i, False) for i in ('Total Bilirubin', 'Direct_Bilirubin', 'Alkaline_Phosphotase', 'Alamine_Aminotransferase', 'Total_Protiens', 'Albumin', 'Albumin_and_Globulin_Ratio')]
+ 
+    if(len(llis)==7):
+            result = ValuePredictor(llis,7,mname)
+ 
+    if(int(result)==1):
+        return render(request,'backend/risk.html')
+    else:
+        return render(request,'backend/norisk.html')
  
  
  
 def DiabetesValuePredictor(to_predict_list,size):
     to_predict = np.array(to_predict_list).reshape(1,size)
     if(size==6):
-        trained_model = joblib.load(r'/home/sid/Desktop/VirtuDoc/diabetes_model.pkl')
+        trained_model = joblib.load(r'/home/sid/VirtuDoc/diabetes_model.pkl')
         result = trained_model.predict(to_predict)
     return result[0]
  
@@ -73,6 +90,6 @@ def dbpredictor(request):
         result = DiabetesValuePredictor(dblis,6)
     
     if(int(result)==1):
-        return render(request,'risk.html')
+        return render(request,'backend/risk.html')
     else:
-        return render(request,'norisk.html')
+        return render(request,'backend/norisk.html')
