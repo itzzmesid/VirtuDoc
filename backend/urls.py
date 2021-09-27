@@ -1,10 +1,13 @@
-from django.urls import path
 
+from django.contrib import admin
+from django.urls import path,include
 from . import views
-
 urlpatterns = [
-    path('', views.home),
-    # path('heart/',views.heart),
-    # path('lungs/',views.lungs),
-    # path('heart/heart-result/',views.hresult),
+    path('', views.home, name = 'home'),
+    path('heart/', views.heart, name = 'heart'),
+    path('kidney/', views.kidney, name = 'kidney'),
+    path('diabetes/',views.diabetes, name = 'diabetes'),
+    path('hpredict/', views.hdpredictor, name = 'hpredict'),
+    path('kpredict/', views.kdpredictor, name = 'kpredict'),
+    path('dbpredict/', views.dbpredictor, name = 'diabetes_pred'), 
 ]
