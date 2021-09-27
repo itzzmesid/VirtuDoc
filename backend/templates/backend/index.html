@@ -1,0 +1,547 @@
+{% load static %}
+ 
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+ 
+  <title>VirtuDoc</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+ 
+  <!-- Favicons -->
+  <link href="{% static 'assets/img/favicon.png' %}" rel="icon">
+  <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+ 
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+ 
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/icofont/icofont.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/venobox/venobox.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/animate.css/animate.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/remixicon/remixicon.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/owl.carousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-datepicker/css/bootstrap-datepicker.min.css' %}" rel="stylesheet">
+ 
+  <!-- Template Main CSS File -->
+  <link href="{% static 'assets/css/style.css'%}" rel="stylesheet">
+ 
+  
+</head>
+ 
+<body>
+ 
+  <!-- ======= Top Bar ======= -->
+  <div id="topbar" class="d-none d-lg-flex align-items-center fixed-top">
+    <div class="container d-flex">
+      <div class="contact-info mr-auto">
+        <i class="icofont-envelope"></i> <a href="mailto:contact@example.com">support@virtudoc.com</a>
+        <i class="icofont-phone"></i> 1234567890
+        <i class="icofont-google-map"></i> India
+      </div>
+      <div class="social-links">
+        <a href="#" class="twitter"><i class="icofont-twitter"></i></a>
+        <a href="#" class="facebook"><i class="icofont-facebook"></i></a>
+        <a href="#" class="instagram"><i class="icofont-instagram"></i></a>
+        <a href="#" class="skype"><i class="icofont-skype"></i></a>
+        <a href="#" class="linkedin"><i class="icofont-linkedin"></i></i></a>
+      </div>
+    </div>
+  </div>
+ 
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+ 
+      <h1 class="logo mr-auto"><a href="index.html">VirtuDoc</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+ 
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="#about">Services</a></li>
+          <li><a href="#services">Diagnose</a></li>
+         <!-- <li class="drop-down"><a href="">Drop Down</a>
+            <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li class="drop-down"><a href="#">Deep Drop Down</a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Drop Down 2</a></li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+            </ul>
+          </li> -->
+          <li><a href="#contact">Contact</a></li>
+ 
+        </ul>
+      </nav><!-- .nav-menu -->
+ 
+      <a href="#appointment" class="appointment-btn scrollto">Sign Up</a>
+      <a href="#appointment" class="appointment-btn scrollto">Sign In</a>
+      <a href="#appointment" class="appointment-btn scrollto">Weekly Report</a>
+ 
+    </div>
+  </header><!-- End Header -->
+ 
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+    <div class="container">
+      <h1>Welcome to VIRTUEDOC</h1>
+      <h2>Your Final Stop For Early Disease Prediction & Health Improvement</h2>
+      <a href="#about" class="btn-get-started scrollto">Get Started</a>
+    </div>
+  </section><!-- End Hero -->
+ 
+  <main id="main">
+ 
+    <!-- ======= Why Us Section ======= -->
+    <section id="why-us" class="why-us">
+      <div class="container">
+ 
+        <div class="row">
+          <div class="col-lg-4 d-flex align-items-stretch">
+            <div class="content">
+              <h3>Why choose Virtudoc?</h3>
+              <p>
+              With VirtuDoc it makes early disease predictions and monitoring the health of your distant loved ones easier 
+              </p>
+              <div class="text-center">
+                <a href="#" class="more-btn">Learn More <i class="bx bx-chevron-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8 d-flex align-items-stretch">
+            <div class="icon-boxes d-flex flex-column justify-content-center">
+              <div class="row">
+                <div class="col-xl-4 d-flex align-items-stretch">
+                  <div class="icon-box mt-4 mt-xl-0">
+                    <i class="bx bx-receipt"></i>
+                    <h4>Chat Bot</h4>
+                    <p>24x7 Intelligent chat bot which reports the disease based on the provided symptoms. </p>
+                  </div>
+                </div>
+                <div class="col-xl-4 d-flex align-items-stretch">
+                  <div class="icon-box mt-4 mt-xl-0">
+                    <i class="bx bx-cube-alt"></i>
+                    <h4>Early Disease Prediction</h4>
+                    <p> Prevention is always better than cure </p>
+                  </div>
+                </div>
+                <div class="col-xl-4 d-flex align-items-stretch">
+                  <div class="icon-box mt-4 mt-xl-0">
+                    <i class="bx bx-images"></i>
+                    <h4>Daily Report</h4>
+                    <p>Stay Updated.Stay Relaxed.</p>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End .content-->
+          </div>
+        </div>
+ 
+      </div>
+    </section><!-- End Why Us Section -->
+ 
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container-fluid">
+ 
+        <div class="row">
+          <div class="col-xl-5 col-lg-6 video-box d-flex justify-content-center align-items-stretch">
+            <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
+          </div>
+ 
+          <div class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5">
+            <h3>Services</h3>
+ 
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-search"></i></div>
+              <h4 class="title"><a href="">Early Disease Prediction</a></h4>
+              <p class="description">Just upload your scan results/imaging results & wait for the advanced AI system to predcit the disease you have. </p>
+            </div>
+ 
+            <div class="icon-box">
+              <div class="icon"><i class="icofont-nurse"></i></div>
+              <h4 class="title"><a href="">Get Care Takers</a></h4>
+              <p class="description">Need a personal health assistant when you are away from your loved ones?Not a problem!With VirtuDOc you can simply hire one.</p>
+            </div>
+ 
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-file"></i></div>
+              <h4 class="title"><a href="">Weekly Health Report</a></h4>
+              <p class="description">Worried about the health of your distant ones?We have got it covered. With our weekly health report generation utility now you can stay relaxed. Let the system work for you! </p>
+            </div>
+            <div class="icon-box">
+              <div class="icon"><i class="icofont-man-in-glasses"></i></div>
+              <h4 class="title"><a href="">Personalized Diet Advisor</a></h4>
+              <p class="description">Confused what to eat and what not to?Just leave it to the perfectly trained diet advisor system</p>
+            </div>
+ 
+          </div>
+        </div>
+ 
+      </div>
+    </section><!-- End About Section -->
+ 
+    
+ 
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container">
+ 
+        <div class="section-title">
+          <h2>Test Yourself</h2>
+        </div>
+ 
+        <div class="row">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="icon-box">
+              <div class="icon"><i class="icofont-heart-beat"></i></div>
+              <h4><a href="heart/">Cardiac Complaints</a></h4>
+              <p>..........................................................</p>
+                
+            </div>
+ 
+          </div>
+ 
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+            <div class="icon-box">
+              <div class="icon"><i class="icofont-thermometer-alt"></i></div>
+              <h4><a href="">Covid 19</a></h4>
+              <p>..........................................................</p>
+              
+            </div>
+          </div>
+ 
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
+            <div class="icon-box">
+              <div class="icon"><i class="icofont-lungs"></i></div>
+              <h4><a href="">Lung Disorders</a></h4>
+              <p>..........................................................</p>
+              
+            </div>
+          </div>
+ 
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+            <div class="icon-box">
+              <div class="icon"><i class="icofont-heartbeat"></i></div>
+              <h4><a href="">Diabetes</a></h4>
+              <p>..........................................................</p>
+              
+            </div>
+          </div>
+ 
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+            <div class="icon-box">
+              <div class="icon"><i class="icofont-drug"></i></div>
+              <h4><a href="">Liver Disorders</a></h4>
+              <p>..........................................................</p>
+               
+            </div>
+          </div>
+ 
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+            <div class="icon-box">
+              <div class="icon"><i class="icofont-autism"></i></div>
+              <h4><a href="">Chat Bot</a></h4>
+              <p>..........................................................</p>
+               <!-- <div class="text-center"><button type="submit">chat</button></div> -->
+            </div>
+          </div>
+ 
+        </div>
+ 
+      </div>
+    </section><!-- End Services Section -->
+ 
+    <!-- ======= Appointment Section ======= -->
+    <section id="appointment" class="appointment section-bg">
+      <div class="container">
+ 
+        <div class="section-title">
+          <h2>Sign Up</h2>
+          <p>Sign Up Today To Get Our Services</p>
+        </div>
+ 
+        <form action="forms/appointment.php" method="post" role="form" class="php-email-form">
+          <div class="form-row">
+            <div class="col-md-4 form-group">
+              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <div class="validate"></div>
+            </div>
+            <div class="col-md-4 form-group">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
+              <div class="validate"></div>
+            </div>
+            <div class="col-md-4 form-group">
+              <input type="tel" class="form-control" name="phone" id="phone" placeholder="Your Phone" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <div class="validate"></div>
+            </div>
+          </div>
+         
+           
+            
+          
+ 
+          
+          <div class="text-center"><button type="submit">Sign Up</button></div>
+        </form>
+ 
+      </div>
+    </section><!-- End Appointment Section -->
+ 
+    <!-- ======= Departments Section ======= -->
+   
+ 
+    
+ 
+    <!-- ======= Frequently Asked Questions Section ======= -->
+    <section id="faq" class="faq section-bg">
+      <div class="container">
+ 
+        <div class="section-title">
+          <h2>Frequently Asked Questions</h2>
+          <p>Feel Free To Ask Us</p>
+        </div>
+ 
+        <div class="faq-list">
+          <ul>
+            <li data-aos="fade-up">
+              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" class="collapse" href="#faq-list-1"> how could thos app replace a doctor? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-1" class="collapse show" data-parent=".faq-list">
+                <p>
+                 ttttt
+                </p>
+              </div>
+            </li>
+ 
+            <li data-aos="fade-up" data-aos-delay="100">
+              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-2" class="collapsed">  how accurate are your predictions? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-2" class="collapse" data-parent=".faq-list">
+                <p>
+                ttttttt
+                </p>
+              </div>
+            </li>
+ 
+            <li data-aos="fade-up" data-aos-delay="200">
+              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-3" class="collapsed">will it provide real time alerts? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-3" class="collapse" data-parent=".faq-list">
+                <p>
+                  ttttttttttttttt
+                </p>
+              </div>
+            </li>
+ 
+            <li data-aos="fade-up" data-aos-delay="300">
+              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-4" class="collapsed">does it provide a emergency alert feature? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-4" class="collapse" data-parent=".faq-list">
+                <p>
+                  tttttttttt
+                </p>
+              </div>
+            </li>
+ 
+            <li data-aos="fade-up" data-aos-delay="400">
+              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-5" class="collapsed">how will it scan your results? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-5" class="collapse" data-parent=".faq-list">
+                <p>
+                  ttttttttttttttttt.
+                </p>
+              </div>
+            </li>
+ 
+          </ul>
+        </div>
+ 
+      </div>
+    </section><!-- End Frequently Asked Questions Section -->
+ 
+ 
+    
+ 
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+ 
+        <div class="section-title">
+          <h2>Contact us</h2>
+        </div>
+      </div>
+ 
+      <div>
+        <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" allowfullscreen></iframe>
+      </div>
+ 
+      <div class="container">
+        <div class="row mt-5">
+ 
+          <div class="col-lg-4">
+            <div class="info">
+              <div class="address">
+                <i class="icofont-google-map"></i>
+                <h4>Location:</h4>
+                <p>India</p>
+              </div>
+ 
+              <div class="email">
+                <i class="icofont-envelope"></i>
+                <h4>Email:</h4>
+                <p>support@virtudoc.com</p>
+              </div>
+ 
+              <div class="phone">
+                <i class="icofont-phone"></i>
+                <h4>Call:</h4>
+                <p>0123456789</p>
+              </div>
+ 
+            </div>
+ 
+          </div>
+ 
+          <div class="col-lg-8 mt-5 mt-lg-0">
+ 
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="form-row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <div class="validate"></div>
+                </div>
+                <div class="col-md-6 form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                  <div class="validate"></div>
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <div class="validate"></div>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                <div class="validate"></div>
+              </div>
+              <div class="mb-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+ 
+          </div>
+ 
+        </div>
+ 
+      </div>
+    </section><!-- End Contact Section -->
+ 
+  </main><!-- End #main -->
+ 
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+ 
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+ 
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>Virtudoc</h3>
+            <p>
+              
+              <strong>Phone:</strong> 1234567890<br>
+              <strong>Email:</strong> support@virtudoc.com<br>
+            </p>
+          </div>
+ 
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+ 
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Disease Prediction</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Hire Care Takers</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Personalized Diet Advisor</a></li>
+              <!-- <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li> -->
+            </ul>
+          </div>
+ 
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Join Our Newsletter</h4>
+            <!-- <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p> -->
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+          </div>
+ 
+        </div>
+      </div>
+    </div>
+ 
+    <div class="container d-md-flex py-4">
+ 
+      <div class="mr-md-auto text-center text-md-left">
+        <div class="copyright">
+          &copy; Copyright <strong><span>VirtuDoc</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/medilab-free-medical-bootstrap-theme/ -->
+          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        </div>
+      </div>
+      <div class="social-links text-center text-md-right pt-3 pt-md-0">
+        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+ 
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+ 
+  <!-- Vendor JS Files -->
+  <script src="{% static 'assets/vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/jquery.easing/jquery.easing.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'assets/vendor/venobox/venobox.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/waypoints/jquery.waypoints.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/counterup/counterup.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/owl.carousel/owl.carousel.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.min.js' %}"></script>
+ 
+  <!-- Template Main JS File -->
+  <script src="{% static 'assets/js/main.js' %}"></script>
+ 
+</body>
+ 
+</html>
